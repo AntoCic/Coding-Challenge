@@ -1,0 +1,100 @@
+/* reset */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+
+/* stile dell'immagine di sfondo e centro il contenuto della pagina sull'asse x */
+body {
+	background-image: url("img/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	font-family: 'Poppins', sans-serif;
+	color: white;
+}
+
+/* grandezza testo paragrafi */
+p {
+	font-size: 0.7em;
+}
+
+/* stile del riquadro opaco nero nello sfondo */
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 10px;
+	margin-top: 15px;
+	padding: 40px;
+	width: 100%;
+	max-width: 800px;
+}
+
+/* stile logo */
+.logo {
+	width: 150px;
+}
+
+/* stile titolo sotto il logo */
+main h1 {
+	color: #00DD00;
+	font-size: 1.5em;
+}
+
+/* stile barra dietro i button */
+.backButtonBar {
+	background-color: #00DD00;
+	width: 100%;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+/* stile button */
+.backButtonBar button {
+	padding: 2px;
+	font-size: 0.6em;
+	border: 1px solid gray;
+	border-radius: 2px;
+}
+
+/* stile container dei monopattini*/
+.container {
+	width: 100%;
+}
+
+/* stile box monopattino */
+.container .box {
+	padding-top: 10px;
+}
+
+/* stili comuni barre di carica*/
+.container .box .bar {
+	height: 20px;
+	border-radius: 3px;
+}
+
+/* stile barra 1 */
+.container .box:nth-child(1) .bar {
+	width: 33%;
+	background-color: yellow;
+}
+
+/* stile barra 2 */
+.container .box:nth-child(2) .bar {
+	width: 60%;
+	background-color: #00DD00;
+}
+
+/* stile barra 3 */
+.container .box:nth-child(3) .bar {
+	width: 15%;
+	background-color: red;
+}
